@@ -1,0 +1,5 @@
+<h2>interação entre componentes</h2>
+
+<h3>Mostre o nome: </h3>
+<h3>O sobrenome esta no elemento pai: {{ sobrenome }}</h3>
+<app-filho [sobrenome]="sobrenome" #filho (mostraNomeEvent)="mostrarNomeCompleto(filho.nome , sobrenome)" ></app-filho>

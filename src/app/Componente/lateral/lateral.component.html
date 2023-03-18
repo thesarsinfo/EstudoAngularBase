@@ -1,0 +1,6 @@
+<h2> Aprofudando os conhecimentos em templates</h2>
+<p>{{ nome | uppercase }}</p>
+<p>{{ dataNascimento | date:"dd/MM/yyyy" }}</p>
+<p>Meu pipe personalizado {{ 2 | pipe:2 }}</p>
+<img [src]="urlImage" >
+<button (click)="ShowDataNascimento()" type="button" >Mostrar data de Nascimento</button>

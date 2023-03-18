@@ -1,0 +1,8 @@
+<h2>Rederizando listas</h2>
+<ul class="lista-produtos">
+    <li *ngFor="let cel of celulares">
+        <strong>{{ cel.nome}}</strong>
+        <p>{{cel.descricao}}</p>
+        <span [ngClass]="cel.esgotado ? 'esgotado' : ''"> {{ cel.esgotado ? "Indiponivel" : "Valor a consultar" }} </span>
+    </li>
+</ul>
